@@ -1,0 +1,25 @@
+.summary {
+    padding: 20px;
+    background-image: url("../images/Background.png");
+    color: white;
+}
+
+.summary h3 {
+    font-family: Montserrat;
+}
+.summary p {
+    font-family: 'Open Sans', 'Times New Roman', Times, serif;
+    font-size: 12;
+}
+
+.read-more {
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.read-more:hover {
+    color:gray;
+}
