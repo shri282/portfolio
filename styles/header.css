@@ -1,0 +1,60 @@
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    padding-left: 10%;
+    padding-right: 3%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.logo {
+    width: 57px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.logo:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.nav-box {
+    display: flex;
+    align-items: center;
+}
+
+.pages {
+    margin-right: 30px;
+}
+
+.nav {
+    font-family: Montserrat;
+    margin-right: 50px;
+    font-weight: 400;
+    font-size: 10;
+    text-decoration: none;
+    color: #FFFFFF; 
+    transition: color 0.15s;
+}
+
+.nav:hover {
+    color: gray;
+}
+
+.contact-me {
+    font-family: Montserrat;
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: 10;
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+}
