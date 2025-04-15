@@ -13,3 +13,12 @@ const getReadmore = function () {
 }
 
 const readMore = getReadmore();
+
+window.addEventListener('scroll', () => {
+    const header = document.getElementById('main-header');
+    if (window.scrollY === 0) {
+        header.classList.add('header-top');
+    } else {
+        header.classList.remove('header-top');
+    }
+});

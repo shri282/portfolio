@@ -1,0 +1,36 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: black;
+}
+
+.skills-header {
+    align-self: center;
+    text-align: center;
+    color: white;
+}
+
+.skills-header h2 {
+    display: inline-block;
+    padding-bottom: 20px;
+    border-bottom: 2px solid gray;
+}
+
+.tech-list-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    height: 250px;
+    gap: 10px 50px;
+    align-self: center;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.tech-list-grid div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
