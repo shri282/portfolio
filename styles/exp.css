@@ -1,0 +1,154 @@
+.experience {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.experience h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    position: relative;
+}
+
+.experience h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, #3498db, #9b59b6);
+    border-radius: 2px;
+}
+
+.experience>p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 700px;
+    line-height: 1.4;
+}
+
+.experience-container {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.exp-item {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.exp-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.exp-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #3498db, #9b59b6);
+}
+
+.company-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.exp-item:hover .company-logo img { 
+    filter: grayscale(0%);
+}
+
+.exp-description {
+    flex: 2;
+    padding: 0 2rem;
+}
+
+.exp-title {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.exp-res {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.exp-res li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;   
+    color: #34495e;
+}
+
+.exp-res li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #3498db;
+}
+
+.exp-date {
+    flex: 1;
+    text-align: right;
+    color: #7f8c8d;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .experience-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .exp-item {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .exp-description {
+        padding: 1.5rem 0;
+    }
+
+    .exp-date {
+        text-align: left;
+        width: 100%;
+        padding-top: 1rem;
+        border-top: 1px solid #eee;
+    }
+}
