@@ -1,0 +1,145 @@
+.contact {
+    padding: 2rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-weight: 300;
+    position: relative;
+}
+
+.contact h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, #3498db, #9b59b6);
+    border-radius: 2px;
+}
+
+.contact>p {
+    color: #666;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.contact-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.contact-address,
+.contact-num,
+.contact-email {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.contact-details img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+}
+
+.contact-details h3 {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+.contact-details p {
+    color: #777;
+    font-size: 0.95rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.name-email-input {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form h3 {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.contact-form input {
+    width: 95%;
+    padding: 0.8rem;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus {
+    outline: none;
+    border-bottom-color: #333;
+}
+
+.message-input input {
+    height: 100px;
+}
+
+.sent-message-btn {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    align-self: center;
+}
+
+.sent-message-btn:hover {
+    background: #555;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .name-email-input {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
