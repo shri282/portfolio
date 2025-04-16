@@ -74,3 +74,61 @@
     font-family: Raleway;
     margin-right: 5px;
 }
+
+
+/* Medium screens: shrink image and font sizes slightly */
+@media (max-width: 900px) {
+    .about-content {
+        padding: 20px;
+    }
+
+    .my-image {
+        width: 300px;
+        height: 260px;
+    }
+
+    .main-content h2 {
+        font-size: 20px;
+    }
+
+    .main-content p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .personal-info div {
+        margin-right: 30px;
+    }
+}
+
+/* Small screens: stack content vertically */
+@media (max-width: 600px) {
+    .about-content {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .my-image {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .main-content h2 {
+        font-size: 18px;
+    }
+
+    .main-content p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .personal-info {
+        flex-direction: column;
+    }
+
+    .personal-info div {
+        margin: 10px 0;
+    }
+}
