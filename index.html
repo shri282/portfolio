@@ -22,17 +22,18 @@
     <link rel="stylesheet" href="./styles/skills.css">
     <link rel="stylesheet" href="./styles/exp.css">
     <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <script src="./index.js"></script>
 </head>
 
 <body>
     <header id="main-header">
-        <img class="logo" src="./images/logo 1.png" alt="">
+        <img class="logo" src="./images/portfolio.png" alt="">
         <div class="nav-box">
             <nav onclick="navHandler(event)" class="pages">
                 <a class="nav">About me</a>
                 <a class="nav">Skills</a>
-                <a class="nav">Portfolio</a>
+                <a class="nav">Experience</a>
                 <a class="contact-me">CONTACT ME</a>
             </nav>
         </div>
@@ -44,13 +45,13 @@
             <h1>Shri Kadhir K</h1>
             <p>Software Engineer / Full stack developer</p>
             <nav class="socials">
-                <a href="www.linkedin.com/in/shri-kadhir-k-a57aa2218" target="_blank">
+                <a href="https://www.linkedin.com/in/shri-kadhir-k-a57aa2218" target="_blank">
                     <img src="./images/linkedin.png" alt="linkedin">
                 </a>
                 <a href="https://github.com/shri282" target="_blank">
                     <img src="./images/github.png" alt="github">
                 </a>
-                <a href=" 	https://leetcode.com/shrikadhir/" target="_blank">
+                <a href="https://leetcode.com/shrikadhir/" target="_blank">
                     <img src="./images/icons8-leetcode-16.png" alt="at">
                 </a>
             </nav>
@@ -60,29 +61,11 @@
         </div>
     </section>
 
-    <!-- <section class="summary">
-        <h3>Summary</h3>
-        <p>
-            Full Stack Developer with 1+ year of experience, specializing in
-            backend development using Node.js, Express.js, and JavaScript.
-            Skilled in building scalable and efficient APIs.
-
-            Proficient in React.js for frontend development, with a focus on
-            building responsive and user-friendly interfaces.
-
-            Passionate about optimizing backend performance and delivering
-            maintainable, high-quality solutions.
-        </p>
-        <p id="readmore-summary" style="display: none;">more......</p>
-        <h5 onclick="readMore(event)" class="read-more">READ MORE</h5>
-    </section> -->
-
     <section id="about-me" class="about-container">
         <div class="about-header">
             <h2>About</h2>
             <p>
-                Passionate about optimizing backend performance and delivering
-                maintainable, high-quality solutions.
+                Always exploring ways to enhance backend performance and code quality through thoughtful design.
             </p>
         </div>
         <div class="about-content">
@@ -92,9 +75,8 @@
             <div class="main-content">
                 <h2>Software Engineer</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna
-                    aliqua.
+                    Hi, I’ m Shri — a Full Stack Developer from Chennai with 1+ year of experience building fast, scalable apps. I focus
+                    mainly on backend development using Node.js, Express, and Java, and I also enjoy working with React for the frontend.
                 </p>
                 <div class="personal-info">
                     <div class="personal-info-list">
@@ -126,15 +108,13 @@
                     </div>
                 </div>
                 <p>
-                    Full Stack Developer with 1+ year of experience, specializing in
-                    backend development using Node.js, Express.js, and JavaScript.
-                    Skilled in building scalable and efficient APIs.
-
-                    Proficient in React.js for frontend development, with a focus on
-                    building responsive and user-friendly interfaces.
-
-                    Passionate about optimizing backend performance and delivering
-                    maintainable, high-quality solutions.
+                    I’ve worked on projects like:<br>
+                    
+                    🛍️ Phoenix – a Shopify app with custom checkout and payment features (NMI).
+                    <br>
+                    📢 Waymore – a marketing platform built with microservices, PHP, nodejs, Spring Boot, and RabbitMQ.
+                    <br>
+                    I love writing clean, maintainable code and optimizing performance under the hood. Always up for new challenges!
                 </p>
             </div>
         </div>
@@ -175,10 +155,6 @@
                 <p>Spring Boot</p>
             </div>
             <div>
-                <img src="./images/icons8-react-24.png" alt="">
-                <p>Spring Boot</p>
-            </div>
-            <div>
                 <img src="./images/icons8-mysql-50.png" alt="">
                 <p>MySql</p>
             </div>
@@ -190,7 +166,7 @@
         </div>
     </section>
 
-    <section class="experience">
+    <section id="experience" class="experience">
         <h2>Experience</h2>
         <p>Here is the quick summary of my most recent experiences:</p>
         <div class="experience-container">
@@ -202,17 +178,20 @@
                     <h3 class="exp-title">Software Engineer</h3>
                     <ul class="exp-res">
                         <li>
-                            Full Stack Developer with 1+ year of experience, specializing in
-                            backend development using Node.js, Express.js, and JavaScript.
-                            Skilled in building scalable and efficient APIs.
+                            Built scalable backend systems using Node.js, Express.js, and Java, focusing on clean, modular architecture.
                         </li>
                         <li>
-                            Proficient in React.js for frontend development, with a focus on
-                            building responsive and user-friendly interfaces.
+                            Developed reusable components and API-driven solutions that boosted project efficiency.
                         </li>
                         <li>
-                            Passionate about optimizing backend performance and delivering
-                            maintainable, high-quality solutions.
+                            Worked on Phoenix, a Shopify app with custom checkout pages and NMI payment integration.
+                        </li>
+                        <li>
+                            Contributed to Waymore, a marketing platform, by building microservices with Spring Boot, integrating RabbitMQ, and
+                            creating responsive UIs with React.js.
+                        </li>
+                        <li>
+                            Focused on performance, maintainability, and seamless user experiences across all projects.
                         </li>
                     </ul>
                 </div>
@@ -221,16 +200,16 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <h2>Contact</h2>
-        <p style="margin-top: 40px;" class="contact-des">Please contact me for further info</p>
+        <p style="margin-top: 40px;" class="contact-des">Please contact me for further information</p>
         <div class="contact-container">
             <div class="contact-details">
                 <div class="contact-address">
                     <img src="./images/icons8-address-50.png" alt="">
                     <div>
                         <h3>Address</h3>
-                        <p>A108 Adam Street, New York, NY 535022</p>
+                        <p>8/1 c block sathasivam road, kattangulathur</p>
                     </div>
                 </div>
                 <div class="contact-num">
@@ -271,6 +250,10 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <p>Copyright © 2025 Shri Kadhir K | All rights reserved</p>
+    </footer>
 
 </body>
 

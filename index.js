@@ -6,6 +6,10 @@ function navHandler(event) {
         sectionDiv = document.getElementById("about-me");
     } else if (section === "Skills") {
         sectionDiv = document.getElementById("skills");
+    } else if (section === "CONTACT ME") {
+        sectionDiv = document.getElementById("contact");
+    } else if (section === "Experience") {
+        sectionDiv = document.getElementById("experience");
     }
 
     if (sectionDiv) {
@@ -14,21 +18,6 @@ function navHandler(event) {
         window.scrollTo({ top: y, behavior: 'smooth' });
     }
 }
-
-const getReadmore = function () {
-    let readMoreFlag = false;
-
-    return function(event) {
-        const readmore = document.getElementById("readmore-summary");
-        if(!readmore) return;
-
-        readMoreFlag = !readMoreFlag;
-        readmore.style.display = readMoreFlag ? "block" : "none";
-        event.target.innerText = readMoreFlag ? "READ LESS" : "READ MORE";
-    }
-}
-
-const readMore = getReadmore();
 
 function toggleHeaderClass() {
     const header = document.getElementById('main-header');
