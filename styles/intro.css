@@ -104,7 +104,7 @@
 .intro-pic img {
     width: 300px;
     height: 300px;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 150px;
 }
 
@@ -160,7 +160,10 @@
 
 @media (max-width: 600px) {
     .hero-section {
-        padding: 20px;
+        padding: 50px 20px;
+        margin: 50px 0px;
+        background: #dcdcdc;
+        
     }
 
     .content h1 {
