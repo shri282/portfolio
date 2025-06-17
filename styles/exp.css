@@ -85,7 +85,7 @@
     transition: filter 0.3s ease;
 }
 
-.exp-item:hover .company-logo img { 
+.exp-item:hover .company-logo img {
     filter: grayscale(0%);
 }
 
@@ -109,7 +109,7 @@
     position: relative;
     padding-left: 1.5rem;
     margin-bottom: 0.5rem;
-    line-height: 1.6;   
+    line-height: 1.6;
     color: #34495e;
 }
 
@@ -136,13 +136,34 @@
 }
 
 @media (max-width: 768px) {
+    .experience {
+        padding-top: 5px;
+    }
+
+    .experience h2 {
+        font-size: 1.5rem;
+    }
+
+    .experience>p {
+        font-size: 1rem;
+    }
+
+    .company-logo img {
+        height: 30px;
+    }
+
     .exp-item {
         flex-direction: column;
         padding: 1.5rem;
     }
 
+    .exp-res li {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
     .exp-description {
-        padding: 1.5rem 0;
+        padding: 0.2rem 0;
     }
 
     .exp-date {
