@@ -138,6 +138,15 @@
         flex-direction: column;
     }
 
+    .contact h2 {
+        font-size: 2rem;
+        font-weight: 200;
+    }
+
+    .contact-details {
+        gap: 0.2rem;
+    }
+
     .name-email-input {
         flex-direction: column;
         gap: 1.5rem;
